@@ -23,6 +23,10 @@ export default function () {
       <div>
         <code>apiKey: {signer.apiKey}</code>
       </div>
+      <div class="alert alert-warning mt-4">
+        Warning! Never share your signer UUID with anyone! Whoever has both the
+        signer UUID and the API key can act on your behalf!
+      </div>
       <h3>Some more info on Signer:</h3>
       <div>
         <code>Public key: {signer.signerPublicKey}</code>
