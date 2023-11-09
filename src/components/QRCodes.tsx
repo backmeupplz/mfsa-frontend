@@ -1,12 +1,20 @@
 import { useAtom } from 'jotai'
 import Link from 'components/Link'
 import QRCode from 'react-qr-code'
+import RequestSigner from 'components/RequestSigner'
 import signerAtom from 'atoms/signerAtom'
 
 export default function () {
   const [signer] = useAtom(signerAtom)
-  return (
+  return !signer ? (
+    <RequestSigner />
+  ) : (
     <div>
+      <p>
+        Login to the bot's account on a mobile device, scan the following QR
+        code (or go to the mentioned URL) and approve the app. Do not close or
+        refresh this page.
+      </p>
       <h3>iOS</h3>
       <QRCode value={signer.iosUrl} />
       <p>

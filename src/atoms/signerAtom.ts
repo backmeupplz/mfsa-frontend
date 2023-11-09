@@ -1,4 +1,4 @@
 import { atom } from 'jotai'
-import getSigner from 'helpers/getSigner'
+import UUIDResponse from 'models/UUIDResponse'
 
-export default atom(getSigner())
+export default atom<Promise<UUIDResponse> | undefined>(undefined)
