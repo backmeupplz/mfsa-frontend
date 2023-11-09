@@ -11,6 +11,17 @@ export default function () {
         following <Link url="https://warpcast.com/borodutch">@borodutch</Link>.
         Cheers!
       </p>
+      <p>
+        P.S., the code for{' '}
+        <Link url="https://github.com/backmeupplz/mfsa-frontend">
+          this website
+        </Link>{' '}
+        and{' '}
+        <Link url="https://github.com/backmeupplz/mfsa-backend">
+          its backend
+        </Link>{' '}
+        is open source and free to use.
+      </p>
     </div>
   )
 }
